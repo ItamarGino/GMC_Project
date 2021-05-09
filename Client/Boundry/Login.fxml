@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LogInController">
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #D2E6E7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="113.0" layoutY="172.0" prefHeight="15.0" prefWidth="69.0" text="New user?" textFill="#6c6c6c">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="NewAccount" layoutX="180.0" layoutY="168.0" onMouseClicked="#GoToNewUserAccount" prefHeight="23.0" prefWidth="107.0" text="Create an account" textFill="#0d69a8" underline="true">
+                     <font>
+                        <Font name="Arial Nova" size="12.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Hyperlink>
+                  <PasswordField fx:id="PasswordText" layoutX="121.0" layoutY="254.0" onMouseClicked="#MovePasswordUp" onMouseReleased="#MovePasswordDown" prefHeight="25.0" prefWidth="178.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D69A8; -fx-background-color: transparent;" />
+                  <Button fx:id="LoginButton" layoutX="121.0" layoutY="290.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="33.0" prefWidth="178.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #53D8FE;" text="login" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Label layoutX="106.0" layoutY="330.0" prefHeight="23.0" prefWidth="123.0" text="Forgot your password?" textFill="#6c6c6c">
+                     <font>
+                        <Font name="Arial Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-41.9000244140625" endY="72.0" layoutX="155.0" layoutY="159.0" startX="-41.90003967285156" startY="50.399993896484375" stroke="#0d69a8" />
+                  <Line endX="-41.9000244140625" endY="72.0" layoutX="155.0" layoutY="206.0" startX="-41.90003967285156" startY="50.399993896484375" stroke="#0d69a8" />
+                  <Hyperlink fx:id="ForgotPassword" layoutX="229.0" layoutY="330.0" onMouseClicked="#GoToForrgotPassword" prefHeight="23.0" prefWidth="69.0" text="Click here!" textFill="#0d69a8" underline="true">
+                     <font>
+                        <Font name="Arial Nova" size="12.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Hyperlink>
+                  <TextField fx:id="UserNameText" layoutX="121.0" layoutY="207.0" onMouseClicked="#MoveUserNameUp" prefHeight="25.0" prefWidth="178.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0D69A8; -fx-background-color: transparent;" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="76.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Icons/lock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="76.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Icons/user%20logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="136.0" layoutY="93.0" text="Login" textFill="#6c6c6c">
+                     <font>
+                        <Font size="52.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UserNameLabel" disable="true" layoutX="122.0" layoutY="213.0" prefHeight="17.0" prefWidth="64.0" text="User-Name" textFill="#676767" />
+                  <Label fx:id="PasswordLabel" disable="true" layoutX="122.0" layoutY="259.0" prefHeight="17.0" prefWidth="54.0" text="Password" textFill="#676767" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/FinalLogo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="ViewCatalogButton" layoutX="110.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#GoToCityCatalog" prefHeight="33.0" prefWidth="178.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #53D8FE;" text="View Our City Catalog" textFill="WHITE" />
+            <TextArea editable="false" layoutX="75.0" layoutY="216.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0ox 0px 0px;" text="Amit &#10;Shachar&#10;Dorin&#10;Remez &#10;Itamar&#10; " />
+            <Line endX="140.5999755859375" layoutX="195.0" layoutY="203.0" startX="-132.20001220703125" stroke="#0d69a8" />
+            <Line endX="140.5999755859375" layoutX="194.0" layoutY="389.0" startX="-132.20001220703125" stroke="#0d69a8" />
+         </children></AnchorPane>
+   </left>
+</BorderPane>
