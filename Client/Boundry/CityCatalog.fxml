@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.SampleController">
+     <top>
+       <AnchorPane id="A" prefHeight="73.0" prefWidth="800.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../Icons/FinalLogo.jpg" />
+               </image>
+            </ImageView>
+            <HBox layoutX="606.0" prefHeight="65.0" prefWidth="122.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="8.0" layoutY="8.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Icons/homepage%20icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView accessibleRole="PARENT" fitHeight="32.0" fitWidth="30.0" layoutX="-82.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" x="100.0">
+                           <image>
+                              <Image url="@../../../Icons/user%20logo.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Hyperlink layoutX="10.0" layoutY="42.0" style="-fx-border-color: white;" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane accessibleRole="PARENT" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" layoutY="1.0" prefHeight="525.0" prefWidth="578.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="80.0" style="-fx-background-color: #D6E8EC;">
+                     <children>
+                        <VBox prefHeight="490.0" prefWidth="470.0">
+                           <children>
+                              <AnchorPane prefHeight="221.0" prefWidth="249.0">
+                                 <children>
+                                    <ImageView fitHeight="125.0" fitWidth="154.0" layoutX="373.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Citys/Jerusalem.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Line endX="-46.0" endY="125.20001220703125" layoutX="411.0" layoutY="57.0" startX="-46.0" startY="-6.79998779296875" stroke="#0d69a8" />
+                                    <Label alignment="CENTER" layoutX="370.0" layoutY="22.0" prefHeight="24.0" prefWidth="94.0" style="-fx-font-size: 16;" text="Jerusalem" />
+                                    <VBox alignment="CENTER" layoutX="201.0" layoutY="43.0" prefHeight="147.0" prefWidth="152.0" spacing="10.0">
+                                       <children>
+                                          <Button fx:id="ViewMapsCollection" mnemonicParsing="false" onMouseClicked="#ChangeVersionNumber" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #53D8FE; -fx-background-radius: 50;" text="View collection" textFill="WHITE" />
+                                          <Button fx:id="ViewMapsCollection11" mnemonicParsing="false" onMouseClicked="#ChangeVersionNumber" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #53D8FE; -fx-background-radius: 50;" text="Purchase" textFill="WHITE" />
+                                          <Button fx:id="ViewMapsCollection12" layoutX="47.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#ChangeVersionNumber" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #53D8FE; -fx-background-radius: 50;" text="Download" textFill="WHITE" />
+                                       </children></VBox>
+                                    <VBox layoutY="43.0" prefHeight="142.0" prefWidth="186.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="141.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Icons/eye.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label prefHeight="27.0" prefWidth="46.0" style="-fx-border-color: #0D69A8; -fx-border-width: 0px 0px 1px 0px; -fx-font-size: 14;" text="Views:" />
+                                                <Label fx:id="ViewsNumberOfCollection" prefHeight="27.0" prefWidth="68.0" text="500">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="141.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Icons/coin.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label prefHeight="27.0" prefWidth="46.0" style="-fx-border-color: #0D69A8; -fx-border-width: 0px 0px 1px 0px; -fx-font-size: 14;" text="Price:" />
+                                                <Label prefHeight="27.0" prefWidth="68.0" text="201$">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="196.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Icons/box.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label prefHeight="27.0" prefWidth="101.0" style="-fx-border-color: #0D69A8; -fx-border-width: 0px 0px 1px 0px; -fx-font-size: 14;" text="Collection Size:" />
+                                                <Label fx:id="VersionNumber" prefHeight="18.0" prefWidth="59.0" text="1342" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="141.0" spacing="5.0">
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Icons/maintenance.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label prefHeight="27.0" prefWidth="51.0" style="-fx-border-color: #0D69A8; -fx-border-width: 0px 0px 1px 0px; -fx-font-size: 14;" text="Version" />
+                                                <Label fx:id="ViewsNumberOfCollection1" prefHeight="27.0" prefWidth="54.0" text="500">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </content></ScrollPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="525.0" prefWidth="222.0" style="-fx-background-color: #91C8E7;" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="100.0" fill="#226fb7" layoutX="111.0" layoutY="118.0" startX="-100.0" stroke="#0d69a8" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="10.5" AnchorPane.topAnchor="117.5" />
+            <Line endX="100.0" fill="#0d6fb8" layoutX="108.0" layoutY="223.0" startX="-100.0" stroke="#0d69a8" />
+            <Line endX="-100.0" endY="109.5" layoutX="208.0" layoutY="113.0" startX="-100.0" startY="5.5" stroke="#0d69a8" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="74.0" prefHeight="33.0" prefWidth="194.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-style: dotted;" text="Search Optins" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="124.0" layoutY="120.0" prefHeight="28.0" prefWidth="77.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-style: dotted;" text="City Name" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="120.0" prefHeight="28.0" prefWidth="85.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-style: dotted;" text="Popular place" textFill="WHITE" />
+            <RadioButton layoutX="16.0" layoutY="159.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="73.0" />
+            <RadioButton layoutX="126.0" layoutY="159.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="73.0" />
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="46.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/thumbs-up.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="158.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icons/skyline.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="11.0" layoutY="256.0" prefHeight="33.0" prefWidth="194.0" style="-fx-border-width: 2; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-style: dotted;" text="Search History" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ListView layoutX="8.0" layoutY="296.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="29.0" AnchorPane.topAnchor="296.0" />
+            <TextField fx:id="TextFiledSearch" accessibleRole="PARENT" layoutX="7.0" layoutY="5.0" prefHeight="46.0" prefWidth="199.0" promptText="Search " style="-fx-border-color: #53D8FE; -fx-border-width: 2; -fx-background-radius: 100; -fx-border-radius: 100%; -fx-background-color: white;" />
+            <Button id="Search" fx:id="Search" layoutX="141.0" layoutY="6.0" minWidth="46.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="67.0" style="-fx-border-color: #53D8FE; -fx-background-color: #53D8FE; -fx-border-radius: 50; -fx-background-radius: 50; -fx-font-size: 10;" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Icons/search_icon111.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
